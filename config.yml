@@ -1,0 +1,16 @@
+title: Motionite__2412
+description: Hey! Everyone my self mahesh from patan Gujarat currently I studying at patan
+template:
+  repo: motionite__2412-template
+  name: motionite__2412
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
